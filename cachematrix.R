@@ -45,6 +45,7 @@ makeCacheMatrix <- function(x = matrix(), nr=numeric(), nc=numeric())
                 ## Use getmat() to check if the value is cached 
                 mat <- x$getmat()
                 
+                ##This piece of code checks if the matrix is already cached, then simply retrieve the cached value & return
                 if(!is.null(mat)) 
                 {
                         message("getting cached data")
